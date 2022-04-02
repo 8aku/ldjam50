@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/RealityMeter.gd" type="Script" id=1]
+[ext_resource path="res://Images/meter.png" type="Texture" id=2]
+
+[node name="RealityMeter" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 5.90913
+margin_top = 6.91391
+margin_right = 25.9091
+margin_bottom = 8.91391
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 18.7537, 3.31576 )
+texture = ExtResource( 2 )

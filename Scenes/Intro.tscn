@@ -1,0 +1,79 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Images/bk2.png" type="Texture" id=1]
+[ext_resource path="res://Images/arrow1.png" type="Texture" id=2]
+[ext_resource path="res://Images/intro2.png" type="Texture" id=3]
+[ext_resource path="res://Pixeled.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 10
+font_data = ExtResource( 4 )
+
+[node name="Intro" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 512.0
+margin_bottom = 514.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1.0
+margin_bottom = -1.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -245.5
+margin_top = -238.0
+margin_right = 245.5
+margin_bottom = 238.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/TextureRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 33.4535
+margin_top = -115.858
+margin_right = 199.454
+margin_bottom = 36.1416
+rect_pivot_offset = Vector2( 46.7401, 7.25925 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.282353, 0.329412, 0.329412, 1 )
+text = "'oh.. h-hey there.
+how's it going? ...
+i know things have
+been - er - a little 
+\"rough\" lately."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="Panel"]
+margin_left = 451.538
+margin_top = 276.42
+margin_right = 474.538
+margin_bottom = 298.42
+texture_normal = ExtResource( 2 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
