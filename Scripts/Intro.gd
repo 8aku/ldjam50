@@ -9,9 +9,11 @@ var label_text = ['oh.. h-hey there...i know, things have been a little rough la
 'Unfortunately this action may cause your health to be compromised.',
 'I know, kinda bullshit.',
 'You can try eating some healthy-ish food to manage your health.',
-'Just remember - if things get TOO REAL TO DEAL, POP A PILL!!!',
-'Press X to take your medication, press SPACE to jump.',
-'Ready to play? Go for it!']
+'...You do not have a lot of food - because you are too anxious to leave the house.',
+'Damn, this really is the time to start taking care of yourself.',
+'Just remember - if things get TOO REAL TO DEAL, POP A PILL AND HEAL...ish!',
+'*** Press X to take your medication, press SPACE to jump. ***',
+'Ready to play? Go for it champ!']
 
 var label_next = 0
 # Called when the node enters the scene tree for the first time.

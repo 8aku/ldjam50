@@ -1,10 +1,21 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/Food.gd" type="Script" id=1]
 [ext_resource path="res://Images/food1.png" type="Texture" id=2]
+[ext_resource path="res://Images/food4.png" type="Texture" id=3]
+[ext_resource path="res://Images/food2.png" type="Texture" id=4]
+[ext_resource path="res://Images/food3.png" type="Texture" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 5.54405
+radius = 9.10146
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="Food" type="Node2D"]
 script = ExtResource( 1 )
@@ -12,9 +23,10 @@ script = ExtResource( 1 )
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 0.55323, 0.368824 )
+position = Vector2( -0.577881, 0.142603 )
 shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="Area2D"]
-texture = ExtResource( 2 )
+[node name="Sprite" type="AnimatedSprite" parent="Area2D"]
+frames = SubResource( 2 )
+playing = true
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
