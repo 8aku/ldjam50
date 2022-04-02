@@ -1,10 +1,10 @@
 extends Node2D
 
 
-var label_text = ['oh.. h-hey there...i know, things have been a little rough lately.',
-'A little rough patch. A teeny, tiny little rought patch.',
+var label_text = ['oh.. h-hey there...i know, things have been a little rough lately. I think we call this a rough patch.',
+'A little rough patch. A teeny, tiny little rough patch.',
 'I know it feels like it has been forever since you, um... did much of anything.',
-'I can - apparently - help you out of your slump. Your little rough patch-eroo.',
+'I can - apparently - help you out of your slump...',
 'Press X to (maybe?) alleviate some of that crushing anxiety and depression.',
 'Unfortunately this action may cause your health to be compromised.',
 'I know, kinda bullshit.',
