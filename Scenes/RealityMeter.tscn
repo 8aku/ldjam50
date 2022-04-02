@@ -7,15 +7,15 @@
 script = ExtResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 5.90913
-margin_top = 6.91391
-margin_right = 25.9091
-margin_bottom = 8.91391
+margin_left = 0.206911
+margin_top = 0.375096
+margin_right = 20.2069
+margin_bottom = 2.3751
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-visible = false
-position = Vector2( 18.7537, 3.31576 )
+position = Vector2( 11.2484, -4.02623 )
+scale = Vector2( 0.625987, 1 )
 texture = ExtResource( 2 )

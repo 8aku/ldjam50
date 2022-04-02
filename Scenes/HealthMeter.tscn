@@ -1,13 +1,21 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/HealthMeter.gd" type="Script" id=1]
+[ext_resource path="res://Images/meter.png" type="Texture" id=2]
 
 [node name="HealthMeter" type="Node2D"]
 script = ExtResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 20.0
-margin_bottom = 2.0
+margin_left = 0.114176
+margin_top = 0.36863
+margin_right = 20.1142
+margin_bottom = 2.36863
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sprite" type="Sprite" parent="ColorRect"]
+position = Vector2( 11.2467, -4.02311 )
+scale = Vector2( 0.625398, 1 )
+texture = ExtResource( 2 )

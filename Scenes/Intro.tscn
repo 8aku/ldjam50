@@ -10,6 +10,8 @@ size = 10
 font_data = ExtResource( 4 )
 
 [node name="Intro" type="Node2D"]
+visible = false
+z_index = 1
 
 [node name="Panel" type="Panel" parent="."]
 margin_right = 512.0

@@ -23,6 +23,7 @@ config/icon="res://icon.png"
 
 PlayerStats="*res://Scripts/PlayerStats.gd"
 EndMenu="*res://Scenes/EndMenu.tscn"
+Intro="*res://Scenes/Intro.tscn"
 
 [display]
 

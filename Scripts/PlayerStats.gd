@@ -1,7 +1,7 @@
 extends Node
 
 const MAX_HEALTH = 10
-const MAX_REALITY = 10
+const MAX_REALITY = 20
 var health
 var dead
 var reality
