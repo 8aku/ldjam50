@@ -1,6 +1,7 @@
 extends Node
 
 const MAX_HEALTH = 10
+const MAX_REALITY = 10
 var health
 var dead
 var reality
@@ -13,3 +14,4 @@ func _ready():
 func reset():
 	dead = false
 	health = MAX_HEALTH
+	reality = 0

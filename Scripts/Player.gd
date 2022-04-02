@@ -22,7 +22,7 @@ var canInteract
 var target
 
 onready var player_stats = get_node("/root/PlayerStats")
-#onready var end_menu = get_node("/root/EndMenu/Panel/Panel")
+onready var end_menu = get_node("/root/EndMenu/CanvasLayer/Panel")
 
 func _ready():
 	$AnimatedSprite.play("default")
@@ -104,8 +104,12 @@ func _process_environment(delta):
 		velocity.y = 0
 		
 	if (player_stats.health == 0):
+		print('player died from low health')
 		die()
-	
+		
+	if (player_stats.reality > player_stats.MAX_REALITY):
+		print('player died from high reality')
+		die()
 	
 func _process_movement(delta):
 	var movement = velocity
@@ -132,4 +136,5 @@ func _process(delta):
 func die():
 	print('player is dead!')
 	player_stats.dead = true
-	#end_menu.show()
+	player_stats.reset()
+	end_menu.show()

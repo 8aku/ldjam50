@@ -155,7 +155,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 scale = Vector2( 2, 2 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 12.1618, 232.357 )
+position = Vector2( 11.7281, 236.181 )
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2( 0, -252 )
