@@ -6,7 +6,7 @@ const LEFT = 0
 const RIGHT = 1
 
 const GRAVITY = 350
-const AIR_RESIST = 400
+const AIR_RESIST = 300
 const MAX_VELOCITY = Vector2(80, 210)
 const JUMP_PERIOD = 0.1
 const MAX_FALL = 15
@@ -14,7 +14,7 @@ const FRICTION = 200
 
 var velocity = Vector2(0, 0)
 var run_accel = FRICTION + 500
-var jump_accel = 165
+var jump_accel = 200
 var last_direction = LEFT
 var jump_timer = 0
 var fall_timer = 0
