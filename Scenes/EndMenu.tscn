@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/EndMenu.gd" type="Script" id=1]
 [ext_resource path="res://Images/playagain_text2.png" type="Texture" id=2]
@@ -6,9 +6,10 @@
 [ext_resource path="res://Images/end.png" type="Texture" id=4]
 [ext_resource path="res://Images/arrow1.png" type="Texture" id=5]
 [ext_resource path="res://Images/bk4.png" type="Texture" id=6]
+[ext_resource path="res://Images/playagain_text3.png" type="Texture" id=7]
+[ext_resource path="res://Images/arrow2.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=1]
-size = 10
 font_data = ExtResource( 3 )
 
 [node name="EndMenu" type="Node2D"]
@@ -29,8 +30,8 @@ __meta__ = {
 
 [node name="Background" type="TextureRect" parent="CanvasLayer/Panel"]
 margin_left = 2.0
-margin_right = 520.0
-margin_bottom = 524.0
+margin_right = 1032.0
+margin_bottom = 1035.0
 texture = ExtResource( 6 )
 expand = true
 stretch_mode = 2
@@ -43,11 +44,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -117.5
-margin_top = -104.0
-margin_right = 117.5
-margin_bottom = -18.0
+margin_left = -201.0
+margin_top = -168.0
+margin_right = 201.0
+margin_bottom = -14.0
 texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 7 )
 expand = true
 stretch_mode = 4
 __meta__ = {
@@ -59,10 +62,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -206.0
-margin_top = -233.0
-margin_right = 203.0
-margin_bottom = 142.0
+margin_left = -441.0
+margin_top = -453.5
+margin_right = 441.0
+margin_bottom = 311.5
 texture = ExtResource( 4 )
 expand = true
 stretch_mode = 5
@@ -72,11 +75,13 @@ __meta__ = {
 
 [node name="TextureButton" type="TextureButton" parent="CanvasLayer/Panel"]
 pause_mode = 2
-margin_left = 227.866
-margin_top = 282.149
-margin_right = 250.866
-margin_bottom = 304.149
+margin_left = 429.152
+margin_top = 597.499
+margin_right = 468.152
+margin_bottom = 637.499
 texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 8 )
 expand = true
 stretch_mode = 4
 __meta__ = {
@@ -88,10 +93,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -167.0
-margin_top = -78.0
-margin_right = -38.0
-margin_bottom = 28.0
+margin_left = -378.118
+margin_top = -134.153
+margin_right = -76.1177
+margin_bottom = 122.847
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.282353, 0.329412, 0.329412, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
